@@ -1,8 +1,8 @@
 MERN Stack App
-This is a simple MERN (MongoDB, Express, React, Node.js) stack app that you can run on your local machine. Follow the instructions below to get started.
+#This is a simple MERN (MongoDB, Express, React, Node.js) stack app that you can run on your local machine. Follow the instructions below to get started.
 
-Prerequisites
-Before you can run this app, you will need to have the following installed on your local machine:
+#Prerequisites
+#Before you can run this app, you will need to have the following installed on your local machine:
 
 Node.js
 MongoDB
