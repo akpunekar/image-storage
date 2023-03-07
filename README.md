@@ -18,4 +18,4 @@ JWT_SECRET=<your-jwt-secret>
 Start the server and client while in root directory of the app.  
 bash -> npm start  
 Open a web browser and navigate to http://localhost:3000 to view the app.  
-That's it! You should now be able to run the Photo-Storage app on your local machine.  
+That's it! You should now be able to run the Image-Storage app on your local machine.  
