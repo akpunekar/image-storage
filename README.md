@@ -6,7 +6,7 @@ MongoDB
 Installation  
 Clone this repository to your local machine.  
 Use bash to clone this repository.  
-git clone https://github.com/akpunekar/image-storage.git  
+bash -> git clone https://github.com/akpunekar/image-storage.git  
 Navigate to the root directory of the app.  
 bash -> cd image-storage  
 Install the dependencies.  
