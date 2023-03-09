@@ -1,11 +1,12 @@
 import { useDispatch } from "react-redux";
 import { deletePhoto } from "../features/photos/photoSlice";
-import { Card, Button, NavLink } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import React from "react";
 
 function PhotoItem({ photo }) {
   const dispatch = useDispatch();
 
+  /* A function that is used to download the image. */
   const downloadImage = (url) => {
     fetch(url)
       .then((response) => response.blob())

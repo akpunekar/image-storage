@@ -1,5 +1,6 @@
 import axios from "axios";
 
+/* Defining the API URL for the photos. */
 const API_URL = "/photos/";
 
 // Upload new photo

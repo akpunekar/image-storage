@@ -68,6 +68,7 @@ export const deletePhoto = createAsyncThunk(
   }
 );
 
+/* Creating a slice of the state. */
 export const photoSlice = createSlice({
   name: "photo",
   initialState,

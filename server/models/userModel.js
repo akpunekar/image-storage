@@ -1,3 +1,4 @@
+/* Creating a connection to the database and creating a schema for the user. */
 const mongoose = require("mongoose");
 const USERS_DB = mongoose.createConnection(process.env.MONGODB_URI_USERS);
 const userSchema = mongoose.Schema(

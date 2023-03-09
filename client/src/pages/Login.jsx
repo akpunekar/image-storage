@@ -7,16 +7,20 @@ import { login, reset } from "../features/auth/authSlice";
 import Spinner from "../components/Spinner";
 
 function Login() {
+  /* Creating a state variable called formData and setting it to an object with username and password
+  properties. */
   const [formData, setFormData] = useState({
     username: "",
     password: "",
   });
 
+  /* Destructuring the formData object. */
   const { username, password } = formData;
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
+  /* Destructuring the state object. */
   const { user, isLoading, isError, isSuccess, message } = useSelector(
     (state) => state.auth
   );
@@ -33,7 +37,9 @@ function Login() {
     dispatch(reset());
   }, [user, isError, isSuccess, message, navigate, dispatch]);
 
+  /* A function that takes in a previous state and returns a new state. */
   const onChange = (e) => {
+    /* A function that takes in a previous state and returns a new state. */
     setFormData((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
@@ -48,9 +54,11 @@ function Login() {
       password,
     };
 
+    /* Dispatching the login action with the userData object. */
     dispatch(login(userData));
   };
 
+  /* Checking if the isLoading property is true. If it is, it will return the Spinner component. */
   if (isLoading) {
     return <Spinner />;
   }

@@ -9,14 +9,17 @@ function PhotoForm() {
   const [visible, setVisible] = useState(false);
   const dispatch = useDispatch();
 
+  /* A function that is called when the form is submitted. */
   const onSubmit = (e) => {
     e.preventDefault();
 
+    /* Dispatching the action to the reducer. */
     dispatch(createPhoto({ photoName, photoUrl }));
     setPhotoName("");
     setPhotoUrl("");
   };
 
+  /* A function that is called when the form is submitted. */
   const getPhotoUrl = (pics) => {
     if (pics.type === "image/jpeg" || pics.type === "image/png") {
       setVisible(true);

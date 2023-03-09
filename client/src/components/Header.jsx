@@ -8,6 +8,7 @@ function Header() {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.auth);
 
+  /* A function that is called when the user clicks the logout button. */
   const onLogout = () => {
     dispatch(logout());
     dispatch(reset());

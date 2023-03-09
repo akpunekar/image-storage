@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import PhotoForm from "../components/PhotoForm";
@@ -11,10 +11,14 @@ function Dashboard() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
+  /* Destructuring the user from the state.auth */
   const { user } = useSelector((state) => state.auth);
+
+  /* Destructuring the photos, isLoading, isError and message from the state.photos. */
   const { photos, isLoading, isError, message } = useSelector(
     (state) => state.photos
   );
+
   useEffect(() => {
     if (isError) {
       toast.error(message);
@@ -30,6 +34,7 @@ function Dashboard() {
     };
   }, [user, navigate, isError, message, dispatch]);
 
+  /* Checking if the isLoading is true, if it is true it will return the Spinner component. */
   if (isLoading) {
     return <Spinner />;
   }

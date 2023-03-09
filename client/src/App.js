@@ -12,6 +12,7 @@ function App() {
       <Router>
         <div className="container">
           <Header />
+          {/* A way to route to different pages. */}
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/login" element={<Login />} />
@@ -19,6 +20,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+      {/* A component that is used to display messages to the user. */}
       <ToastContainer />
     </>
   );
