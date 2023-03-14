@@ -9,10 +9,10 @@ Use bash to clone this repository.
 bash -> git clone https://github.com/akpunekar/image-storage.git  
 Navigate to the root directory of the app.  
 bash -> cd image-storage  
-Install the dependencies.  
-bash -> npm install. 
-Install Client dependencies. 
-bash -> cd client && npm install. 
+Install the dependencies   
+bash -> npm install   
+Install Client dependencies   
+bash -> cd client && npm install   
 Edit a example.env to .env file in the root directory and add the following variables with your own values:  
 MONGODB_URI=<your-mongodb-uri>  
 JWT_SECRET=<your-jwt-secret>  
